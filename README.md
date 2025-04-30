@@ -160,7 +160,7 @@ Combining pretrained embeddings and TCN leads to strong results on noisy instrum
   Responsible for searching, testing, and creating the datasets of this project. Contributed to README sections 2.
 
 - **Mier Huang**  
-  Real-world testing and writing README section 4 (Results and Key Findings).
+  Real-world testing, data analysis and writing README section 4 (Results and Key Findings).
 
 ---
 
