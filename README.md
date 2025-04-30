@@ -70,6 +70,17 @@ We created four versions of the dataset corresponding to different noise intensi
   - Progressive fine-tuning on noisy subsets (SNR5 → SNR0 → SNR–5)
   - Evaluation results and test prediction
 
+- **Notebook** (`dataset_processing.ipynb `) includes:
+  - Dataset creation workflow combining IRMAS and MUSAN
+  - Noise scaling and mixing at multiple SNR levels: SNR10 (clean), SNR5, SNR0, SNR–5
+  - Automatic resampling and file output for training
+
+- **Notebook** (`run_test.ipynb `) includes:
+  - Test notebook for real-world audio classification using the trained model.
+  - Loads WAV files, extracts YAMNet embeddings, formats them, and outputs predicted instrument labels.
+
+
+
 ---
 
 ## Results and Key Findings  
@@ -135,8 +146,6 @@ The model performed well overall but showed confusions in the following categori
 
 Combining pretrained embeddings and TCN leads to strong results on noisy instrument recognition.
 
-**Key insight**: Curriculum learning greatly improves generalization under increasing noise levels, especially on real-world data.
-
 
 **Key insight**: Curriculum learning greatly improves generalization under increasing noise levels, especially on real-world data.
 
@@ -145,13 +154,13 @@ Combining pretrained embeddings and TCN leads to strong results on noisy instrum
 ## Group Member Contributions  
 
 - **Zixuan Guo**  
-  Model architecture (TCN), curriculum learning pipeline, real-world testing, code structuring, final notebook & documentation.
+  Project coordination, model exploration, model architecture (TCN), curriculum learning pipeline, code structuring, and writing README sections 1, 3, and 5.
 
 - **Yuantao Li**  
-  Responsible for searching, testing, and creating the datasets of this project.
+  Responsible for searching, testing, and creating the datasets of this project. Contributed to README sections 2.
 
 - **Mier Huang**  
-  Embedding extraction using YAMNet, dataset preparation, project coordination, report writing.
+  Real-world testing and writing README section 4 (Results and Key Findings).
 
 ---
 
