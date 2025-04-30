@@ -55,6 +55,11 @@ We created four versions of the dataset corresponding to different noise intensi
 
 ## Code Structure and Organization  
 ```
+├── data/                    # Raw audio files organized by noise level (not included in repo)
+│   ├── SNR10/               # Clean audio data (Signal-to-Noise Ratio +10dB)
+│   ├── SNR5/                # Mildly noisy data (+5dB)
+│   ├── SNR0/                # Moderately noisy data (0dB)
+│   └── SNR-5/               # Heavily noisy data (–5dB)
 ├── embeddings/              # Saved YAMNet features and labels (.npy files)
 ├── checkpoints/             # Trained model weights (h5 files)
 ├── train.ipynb               # Full training + curriculum pipeline (notebook)
