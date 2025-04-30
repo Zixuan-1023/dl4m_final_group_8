@@ -155,12 +155,15 @@ Combining pretrained embeddings and TCN leads to strong results on noisy instrum
 
 - **Zixuan Guo**  
   Project coordination, model exploration, model architecture (TCN), curriculum learning pipeline, code structuring, and writing README sections 1, 3, and 5.
+  - Main code contributions: train.ipynb, models.py, utils.py
 
 - **Yuantao Li**  
   Responsible for searching, testing, and creating the datasets of this project. Contributed to README sections 2.
+  - Main code contribution: dataset_processing.ipynb
 
 - **Mier Huang**  
   Real-world testing, data analysis and writing README section 4 (Results and Key Findings).
+  - Main code contribution: run_test.ipynb
 
 ---
 
